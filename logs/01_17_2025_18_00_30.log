@@ -1,2 +1,0 @@
-2025-01-17 18:00:30,506 6 root - INFO - Columns in train_df: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course', 'math_score', 'reading_score', 'writing_score']
-2025-01-17 18:00:30,506 7 root - INFO - Columns in test_df: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course', 'math_score', 'reading_score', 'writing_score']

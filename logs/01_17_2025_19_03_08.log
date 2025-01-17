@@ -1,0 +1,63 @@
+2025-01-17 19:03:09,265 23 root - INFO - Entered the data ingestion method or component
+2025-01-17 19:03:09,267 26 root - INFO - Read the dataset as dataframe
+2025-01-17 19:03:09,268 29 root - INFO - Train test split initiated
+2025-01-17 19:03:09,270 33 root - INFO - Ingestion of the data is completed
+2025-01-17 19:03:09,271 82 root - INFO - Read train and test data completed
+2025-01-17 19:03:09,271 84 root - INFO - Obtaining preprocessing object
+2025-01-17 19:03:09,271 58 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+2025-01-17 19:03:09,271 59 root - INFO - Numerical columns: ['writing_score', 'reading_score']
+2025-01-17 19:03:09,271 97 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+2025-01-17 19:03:09,277 109 root - INFO - Saved preprocessing object.
+2025-01-17 19:03:09,277 25 root - INFO - Object saved successfully at: artifacts/proprocessor.pkl
+2025-01-17 19:03:09,277 33 root - INFO - Split training and test input data
+2025-01-17 19:03:09,277 47 root - INFO - Evaluating model: Random Forest
+2025-01-17 19:03:09,277 48 root - INFO - Model object: RandomForestRegressor()
+2025-01-17 19:03:09,277 49 root - INFO - Hyperparameters: {'n_estimators': [8, 16, 32, 64, 128, 256]}
+2025-01-17 19:03:09,277 56 root - INFO - Running GridSearchCV for Random Forest
+2025-01-17 19:03:11,360 59 root - INFO - Best params for Random Forest: {'n_estimators': 64}
+2025-01-17 19:03:11,441 72 root - INFO - Random Forest - Train R2: 0.9758889885106129, Test R2: 0.849321211826264
+2025-01-17 19:03:11,441 47 root - INFO - Evaluating model: Decision Tree
+2025-01-17 19:03:11,441 48 root - INFO - Model object: DecisionTreeRegressor()
+2025-01-17 19:03:11,441 49 root - INFO - Hyperparameters: {'criterion': ['squared_error', 'friedman_mse', 'absolute_error', 'poisson']}
+2025-01-17 19:03:11,441 56 root - INFO - Running GridSearchCV for Decision Tree
+2025-01-17 19:03:11,468 59 root - INFO - Best params for Decision Tree: {'criterion': 'poisson'}
+2025-01-17 19:03:11,470 72 root - INFO - Decision Tree - Train R2: 0.9996534669718089, Test R2: 0.7473271789409317
+2025-01-17 19:03:11,470 47 root - INFO - Evaluating model: Gradient Boosting
+2025-01-17 19:03:11,470 48 root - INFO - Model object: GradientBoostingRegressor()
+2025-01-17 19:03:11,470 49 root - INFO - Hyperparameters: {'learning_rate': [0.1, 0.01, 0.05, 0.001], 'subsample': [0.6, 0.7, 0.75, 0.8, 0.85, 0.9], 'n_estimators': [8, 16, 32, 64, 128, 256]}
+2025-01-17 19:03:11,470 56 root - INFO - Running GridSearchCV for Gradient Boosting
+2025-01-17 19:03:13,486 59 root - INFO - Best params for Gradient Boosting: {'learning_rate': 0.05, 'n_estimators': 128, 'subsample': 0.85}
+2025-01-17 19:03:13,543 72 root - INFO - Gradient Boosting - Train R2: 0.8951523491099116, Test R2: 0.8762795816677859
+2025-01-17 19:03:13,543 47 root - INFO - Evaluating model: Linear Regression
+2025-01-17 19:03:13,543 48 root - INFO - Model object: LinearRegression()
+2025-01-17 19:03:13,543 49 root - INFO - Hyperparameters: {}
+2025-01-17 19:03:13,544 72 root - INFO - Linear Regression - Train R2: 0.8743172040139593, Test R2: 0.8804332983749565
+2025-01-17 19:03:13,544 47 root - INFO - Evaluating model: XGBRegressor
+2025-01-17 19:03:13,545 48 root - INFO - Model object: XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)
+2025-01-17 19:03:13,545 49 root - INFO - Hyperparameters: {'learning_rate': [0.1, 0.01, 0.05, 0.001], 'n_estimators': [8, 16, 32, 64, 128, 256]}
+2025-01-17 19:03:13,545 53 root - INFO - Skipping GridSearchCV for XGBRegressor
+2025-01-17 19:03:13,785 72 root - INFO - XGBRegressor - Train R2: 0.9954995444196413, Test R2: 0.8230898008444014
+2025-01-17 19:03:13,785 47 root - INFO - Evaluating model: CatBoosting Regressor
+2025-01-17 19:03:13,785 48 root - INFO - Model object: <catboost.core.CatBoostRegressor object at 0x13bdfa590>
+2025-01-17 19:03:13,785 49 root - INFO - Hyperparameters: {'depth': [6, 8, 10], 'learning_rate': [0.01, 0.05, 0.1], 'iterations': [30, 50, 100]}
+2025-01-17 19:03:13,785 56 root - INFO - Running GridSearchCV for CatBoosting Regressor
+2025-01-17 19:03:14,897 59 root - INFO - Best params for CatBoosting Regressor: {'depth': 6, 'iterations': 100, 'learning_rate': 0.1}
+2025-01-17 19:03:14,931 72 root - INFO - CatBoosting Regressor - Train R2: 0.9071223853509314, Test R2: 0.8613734525258083
+2025-01-17 19:03:14,931 47 root - INFO - Evaluating model: AdaBoost Regressor
+2025-01-17 19:03:14,931 48 root - INFO - Model object: AdaBoostRegressor()
+2025-01-17 19:03:14,931 49 root - INFO - Hyperparameters: {'learning_rate': [0.1, 0.01, 0.5, 0.001], 'n_estimators': [8, 16, 32, 64, 128, 256]}
+2025-01-17 19:03:14,931 56 root - INFO - Running GridSearchCV for AdaBoost Regressor
+2025-01-17 19:03:15,736 59 root - INFO - Best params for AdaBoost Regressor: {'learning_rate': 0.5, 'n_estimators': 128}
+2025-01-17 19:03:15,850 72 root - INFO - AdaBoost Regressor - Train R2: 0.8510287958465466, Test R2: 0.8482627270398403
+2025-01-17 19:03:15,850 102 root - INFO - Best found model on both training and testing dataset
+2025-01-17 19:03:15,851 25 root - INFO - Object saved successfully at: artifacts/model.pkl

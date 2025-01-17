@@ -1,0 +1,12 @@
+2025-01-17 18:56:12,730 23 root - INFO - Entered the data ingestion method or component
+2025-01-17 18:56:12,732 26 root - INFO - Read the dataset as dataframe
+2025-01-17 18:56:12,733 29 root - INFO - Train test split initiated
+2025-01-17 18:56:12,735 33 root - INFO - Ingestion of the data is completed
+2025-01-17 18:56:12,736 82 root - INFO - Read train and test data completed
+2025-01-17 18:56:12,736 84 root - INFO - Obtaining preprocessing object
+2025-01-17 18:56:12,736 58 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+2025-01-17 18:56:12,736 59 root - INFO - Numerical columns: ['writing_score', 'reading_score']
+2025-01-17 18:56:12,736 97 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+2025-01-17 18:56:12,742 109 root - INFO - Saved preprocessing object.
+2025-01-17 18:56:12,742 25 root - INFO - Object saved successfully at: artifacts/proprocessor.pkl
+2025-01-17 18:56:12,742 33 root - INFO - Split training and test input data
