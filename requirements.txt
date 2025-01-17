@@ -1,4 +1,8 @@
 pandas 
 numpy 
 seaborn
+numpy==1.26.4
+scikit-learn
+catboost
+xgboost
 -e .
