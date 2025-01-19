@@ -1,0 +1,11 @@
+2025-01-17 23:22:49,978 97 werkzeug - WARNING -  * Debugger is active!
+2025-01-17 23:22:49,985 97 werkzeug - INFO -  * Debugger PIN: 384-955-475
+2025-01-17 23:23:03,275 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:23:03] "POST /predictdata HTTP/1.1" 200 -
+2025-01-17 23:24:25,178 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:24:25] "[35m[1mGET /predictdata HTTP/1.1[0m" 500 -
+2025-01-17 23:24:25,191 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:24:25] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-17 23:24:25,191 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:24:25] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-17 23:24:25,197 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:24:25] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=ClVT3jYxZYNCKImfC9kK HTTP/1.1" 200 -
+2025-01-17 23:24:34,933 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:24:34] "[35m[1mGET /predictdata HTTP/1.1[0m" 500 -
+2025-01-17 23:24:34,939 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:24:34] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-17 23:24:34,940 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:24:34] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-17 23:24:34,943 97 werkzeug - INFO - 127.0.0.1 - - [17/Jan/2025 23:24:34] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=ClVT3jYxZYNCKImfC9kK HTTP/1.1[0m" 304 -
